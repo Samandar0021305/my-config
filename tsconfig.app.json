@@ -4,7 +4,6 @@
   "exclude": ["src/**/__tests__/*"],
   "compilerOptions": {
     "composite": true,
-    "module": "esnext",
     "noEmit": true,
     "baseUrl": ".",
     "paths": {
