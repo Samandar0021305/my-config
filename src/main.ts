@@ -6,10 +6,15 @@ import App from './App.vue'
 import router from './plugins/router';
 
 import '@/assets/scss/index.scss';
+import { useComponents } from "./sam-design";
 
 const app = createApp(App)
 
 app.use(createPinia())
 app.use(router)
+
+Object.keys(useComponents).forEach((key:string)=>{
+  app.component(useComponents[key].tag , useComponents[key].value)
+})
 
 app.mount('#app')
