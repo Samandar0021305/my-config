@@ -1,6 +1,6 @@
 <template>
   <i
-    class="t-icon-wrapper"
+    class="s-icon-wrapper"
     v-if="wrapped"
     @click="handleClick"
     :class="size"
@@ -11,11 +11,11 @@
       borderColor: MixinGetColor(colorBorder),
     }"
   >
-    <component class="t-icon" :is="icon" :fill="MixinGetColor(colorFill)" />
+    <component class="s-icon" :is="icon" :fill="MixinGetColor(colorFill)" />
   </i>
   <component
-    class="t-icon"
-    :class="`t-icon-${size}`"
+    class="s-icon"
+    :class="`s-icon-${size}`"
     v-else
     :is="icon"
     @click="handleClick"
@@ -82,7 +82,7 @@ const handleClick = (event: Event) => {
   border-radius: 50%;
 }
 
-.t-icon-wrapper {
+.s-icon-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -106,7 +106,7 @@ const handleClick = (event: Event) => {
     height: 36px;
     border-radius: 8px;
 
-    .t-icon {
+    .s-icon {
       width: 22px;
       height: 22px;
     }
