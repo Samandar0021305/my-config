@@ -8,6 +8,9 @@ import router from './plugins/router';
 import '@/assets/scss/index.scss';
 import { useComponents } from "./sam-design";
 
+// keyinroq global qilaman
+// import axios from './plugins/axios';
+
 const app = createApp(App)
 
 app.use(createPinia())
