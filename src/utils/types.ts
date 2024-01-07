@@ -9,3 +9,6 @@ export type TypeLang = {
 export type TypeComponents = {
     [key: string]: { tag: string, value: any };  
 } 
+
+ 
+export type TypeIconSize = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'custom';
