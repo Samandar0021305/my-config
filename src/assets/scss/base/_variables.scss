@@ -1,0 +1,37 @@
+:root {
+    // #region colors
+    --color-red: 188, 17, 17;
+    --color-red1: rgb(var(--color-red));
+    --color-red2: rgb(245, 219, 219);
+    --color-blue: 63, 113, 206;
+    --color-blue1: rgb(var(--color-blue));
+    --color-blue2: rgb(226, 234, 248);
+    --color-green: 55, 143, 35;
+    --color-green1: rgb(var(--color-green));
+    --color-green2: rgb(225, 238, 222);
+    --color-orange: 143, 93, 35;
+    --color-orange1: rgb(var(--color-orange));
+    --color-orange2: rgb(238, 231, 222);
+    --color-yellow: 222, 150, 11;
+    --color-yellow1: rgb(var(--color-yellow));
+    --color-yellow2: rgb(250, 239, 218);
+    --color-black: 18, 17, 17;
+    --color-black1: rgb(var(--color-black));
+    --color-black2: rgb(43, 43, 44);
+    --color-black3: rgb(105, 105, 108);
+    --color-black4: rgb(145, 145, 148);
+    --color-black5: rgb(175, 175, 175);
+    --color-black6: rgb(219, 219, 219);
+    --color-black7: rgb(237, 237, 237);
+    --color-black8: rgb(244, 244, 244);
+    --color-white: 255, 255, 255;
+    --color-white1: rgb(var(--color-white));
+    --sider-bg: rgb(18, 17, 17);
+    --main-bg: rgb(242, 242, 242);
+    //#endregion 
+    // #region sizes
+    --aside-width: 300px;
+    --aside-menu-height: 50px;
+    --header-height: 82px;
+    // #endregion
+}

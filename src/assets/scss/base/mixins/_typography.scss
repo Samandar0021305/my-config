@@ -1,0 +1,86 @@
+// dizaynga qarab o'zgarishi mumkin
+
+@mixin headline1($color:var(--color-black1)){
+    color: $color;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 130%;
+}
+
+@mixin headline2($color: var(--color-black1)){
+    color: $color;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 130%;
+}
+
+@mixin subtitle1 ($color: var(--color-black1)) {
+    color: $color;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 130%;
+}
+
+@mixin subtitle2 ($color: var(--color-black1)) {
+    color: $color;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+@mixin body1 ($color: var(--color-black1)) {
+    color: $color;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+@mixin body2 ($color: var(--color-black1)) {
+    color: $color;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+@mixin body3 ($color: var(--color-black1)) {
+    color: $color;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 150%;
+}
+
+@mixin body4 ($color: var(--color-black1)) {
+    color: $color;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+
+@mixin button1 ($color: var(--color-black1)) {
+    color: $color;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+@mixin button2 ($color: var(--color-black1)) {
+    color: $color;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 130%;
+}
+
+@mixin caption ($color: var(--color-black1)) {
+    color: $color;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 130%;
+}
+
+@mixin overline ($color: var(--color-black1)) {
+    color: $color;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 130%;
+}

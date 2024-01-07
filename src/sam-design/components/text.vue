@@ -7,6 +7,7 @@
       whiteSpace: props.wrap ? '' : 'nowrap',
       textAlign: props.center ? 'center' : '',
     }"
+    :class="props.tg !== 'custom' ? 't-text-' + props.tg : 'custom'"
     class="s-text"
   >
     <slot></slot>
@@ -37,9 +38,18 @@ const props = defineProps({
     default: false,
   },
 });
-
 const emit = defineEmits(["click"]);
 const handleClick = (event: Event) => {
   emit("click", event);
 };
 </script>
+
+<style lang="scss">
+
+.s-text {
+  &:not(.custom) {
+    margin: 0;
+    display: block;
+  }
+}
+</style>

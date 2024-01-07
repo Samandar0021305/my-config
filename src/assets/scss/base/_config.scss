@@ -1,0 +1,175 @@
+* {
+    font-family: 'GT Eesti Pro Display', sans-serif !important;
+  }
+  
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .ant-space {
+    display: flex;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .ant-divider {
+    border-color: var(--color-black6);
+  
+    &-horizontal {
+      margin: 16px 0;
+    }
+  
+    &-vertical {
+      height: 32px;
+    }
+  }
+  
+  .icon-library {
+    border: 1px solid var(--color-black7);
+    padding: 16px;
+    height: 100%;
+  
+    svg {
+      width: 100%;
+      height: auto;
+    }
+  
+    span {
+      @include body1;
+      text-align: center;
+      display: block;
+    }
+  }
+  
+  span {
+    &[class*="tag"] {
+      height: 32px;
+      border-radius: 30px;
+      padding: 0 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: max-content;
+      @include body4;
+  
+      &.small {
+        height: 24px;
+        padding: 0 6px;
+      }
+  
+      &.bordered {
+        border: 1px solid transparent;
+      }
+  
+      &.tag {
+        &-green {
+          background-color: var(--color-green2);
+          color: var(--color-green1);
+          border-color: var(--color-green1);
+        }
+  
+        &-grey {
+          background-color: var(--color-black7);
+          color: var(--color-black2);
+          border-color: var(--color-black2);
+        }
+  
+        &-orange {
+          background-color: var(--color-orange2);
+          color: var(--color-orange1);
+          border-color: var(--color-orange1);
+        }
+  
+        &-red {
+          background-color: var(--color-red2);
+          color: var(--color-red1);
+          border-color: var(--color-red1);
+        }
+  
+        &-yellow {
+          background-color: var(--color-yellow2);
+          color: var(--color-yellow1);
+          border-color: var(--color-yellow1);
+        }
+  
+        &-blue {
+          background-color: var(--color-blue2);
+          color: var(--color-blue1);
+          border-color: var(--color-blue1);
+        }
+      }
+    }
+  
+  
+  
+  }
+  
+  .review {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+  
+    &-fill {
+      fill: var(--color-yellow1);
+    }
+  
+    &-stroke {
+      stroke: var(--color-black6);
+      stroke-width: 1.5px;
+      fill: transparent;
+    }
+  }
+  
+  
+  // text
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  
+    &-item {
+      display: flex;
+      align-items: flex-end;
+  
+      span {
+        &._1 {
+          @include body2(var(--color-black3));
+        }
+  
+        &._2 {
+          @include body1(var(--color-black2));
+        }
+      }
+  
+      &-line {
+        flex: 1;
+        margin: 0 12px;
+        transform: translateY(-8px);
+        border-bottom: 1px dashed var(--color-black5);
+      }
+  
+    }
+  }
+  
+  .w100 {
+    width: 100% !important;
+  }
