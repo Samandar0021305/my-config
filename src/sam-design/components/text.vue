@@ -45,11 +45,67 @@ const handleClick = (event: Event) => {
 </script>
 
 <style lang="scss">
+@import "@/assets/scss/base/mixins/typography";
 
-.s-text {
+.t-text {
   &:not(.custom) {
     margin: 0;
     display: block;
+  }
+
+  &-headline1 {
+    @include headline1(var(--color-black1));
+  }
+
+  &-headline2 {
+    @include headline2(var(--color-black1));
+  }
+
+  &-subtitle1 {
+    @include subtitle1(var(--color-black1));
+  }
+
+  &-subtitle2 {
+    @include subtitle2(var(--color-black1));
+  }
+
+  &-body1 {
+    @include body1(var(--color-black1));
+  }
+
+  &-body2 {
+    @include body2(var(--color-black1));
+  }
+
+  &-body3 {
+    @include body3(var(--color-black1));
+  }
+
+  &-body4 {
+    @include body4(var(--color-black1));
+  }
+
+  &-button1 {
+    @include button1(var(--color-black1));
+  }
+
+  &-button2 {
+    @include button2(var(--color-black1));
+  }
+
+  &-button2 {
+    @include button2(var(--color-black1));
+  }
+
+  &-caption {
+    @include caption(var(--color-black1));
+  }
+
+  &-overline {
+    @include overline(var(--color-black1));
+  }
+  &-black{
+    @include headline1(var(--sider-bg));
   }
 }
 </style>
