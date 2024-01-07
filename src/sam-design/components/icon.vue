@@ -65,10 +65,8 @@ const props = defineProps({
 const icon = defineAsyncComponent(async () => {
   try {
     const module = await import(`../../assets/svg/${props.name}.svg`);
-    console.log('Module:', module);
     return module;
   } catch (error) {
-    console.error('Error during dynamic import:', error);
     throw error;
   }
 });
@@ -81,90 +79,90 @@ const handleClick = (event: Event) => {
 
 <style lang="scss">
 .layout.student .t-icon-wrapper {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
 .t-icon-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px solid;
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+
+  &.xxl {
+    width: 40px;
+    height: 40px;
+
+    .t-icon {
+      width: 22px;
+      height: 22px;
+    }
+  }
+
+  &.xl {
+    min-width: 36px;
+    height: 36px;
+    border-radius: 8px;
+
+    .t-icon {
+      width: 22px;
+      height: 22px;
+    }
+  }
+
+  &.lg {
+    min-width: 32px;
+    height: 32px;
+    border-radius: 8px;
+
+    .t-icon {
+      width: 22px;
+      height: 22px;
+    }
+  }
+
+  &.md {
+    min-width: 24px;
+    height: 24px;
     border-radius: 4px;
-    transition: all 0.2s ease-in-out;
 
-    &.xxl {
-        width: 40px;
-        height: 40px;
-
-        .t-icon {
-            width: 22px;
-            height: 22px;
-        }
+    .t-icon {
+      width: 18px;
+      height: 18px;
     }
-
-    &.xl {
-        min-width: 36px;
-        height: 36px;
-        border-radius: 8px;
-
-        .t-icon {
-            width: 22px;
-            height: 22px;
-        }
-    }
-
-    &.lg {
-        min-width: 32px;
-        height: 32px;
-        border-radius: 8px;
-
-        .t-icon {
-            width: 22px;
-            height: 22px;
-        }
-    }
-
-    &.md {
-        min-width: 24px;
-        height: 24px;
-        border-radius: 4px;
-
-        .t-icon {
-            width: 18px;
-            height: 18px;
-        }
-    }
+  }
 }
 
 .t-icon {
-    display: block;
-    transition: all 0.2s ease-in-out;
-    cursor: pointer;
+  display: block;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
 
-    &-xl {
-        width: 24px;
-        height: 24px;
-    }
+  &-xl {
+    width: 24px;
+    height: 24px;
+  }
 
-    &-lg {
-        width: 22px;
-        height: 22px;
-    }
+  &-lg {
+    width: 22px;
+    height: 22px;
+  }
 
-    &-md {
-        width: 20px;
-        height: 20px;
-    }
+  &-md {
+    width: 20px;
+    height: 20px;
+  }
 
-    &-sm {
-        width: 18px;
-        height: 18px;
-    }
+  &-sm {
+    width: 18px;
+    height: 18px;
+  }
 
-    &-xs {
-        width: 16px;
-        height: 16px;
-    }
+  &-xs {
+    width: 16px;
+    height: 16px;
+  }
 }
 </style>
