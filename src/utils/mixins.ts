@@ -10,17 +10,22 @@ export function MixinGetColor(color?: string): string {
 
 
 export function MixinResetForm<T extends Record<string, any>>(target: T, source: T): void {
-    function deepCopy(obj: any): any {
-        if (typeof obj !== 'object' || obj === null) {
-            return obj;
-        }
-        const result: any = Array.isArray(obj) ? [] : {};
-        for (const key in obj) {
-            if (Object.prototype.hasOwnProperty.call(obj, key)) {
-                result[key] = deepCopy(obj[key]);
-            }
-        }
-        return result;
-    }
-    Object.assign(target, deepCopy(source));
+    // const data = target;
+    // while(data){
+          
+    // }
+    // function deepCopy(obj: any): any {
+    //     if (typeof obj !== 'object' || obj === null) {
+    //         return obj;
+    //     }
+    //     const result: any = Array.isArray(obj) ? [] : {};
+    //     for (const key in obj) {
+    //         if (Object.prototype.hasOwnProperty.call(obj, key)) {
+    //             result[key] = deepCopy(obj[key]);
+    //         }
+    //     }
+    //     return result;
+    // }
+    // Object.assign(target, deepCopy(source));
+    
 }
